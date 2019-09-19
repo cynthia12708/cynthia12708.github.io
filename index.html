@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=1000, initial-scale=1.0">
+		<title>FUN BAR_02</title>
+		<link rel="stylesheet" href="css/main.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	</head>
+	<body>
+
+		<header>
+			<img src="image/logo.png" class="header_pic_1">
+			<img src="image/toppic.png" class="header_pic_2">
+			<div class="navbar">
+				<ul style="padding-left:30px;">
+					<li id="b1"><img src="image/icon_1.png"><a>公司介紹</a></li>
+					<li id="b3"><img src="image/icon_2.png"><a>聯絡我們</a></li>
+					<li id="b2" class="active"><img src="image/icon_3.png"><a>遊戲介紹</a></li>
+				</ul>
+			</div>
+		</header>
+			
+		<main>	
+		
+			<aside><img src="image/aside.png"></aside>
+			
+			<div class="content"> 
+			
+				<a class="game_a">遊戲介紹</a>
+				<img src="image/line.png" class="linepic">
+				<div class="block_1">
+					<img src="image/content_1_1.png" id="pic_1">
+					<img src="image/content_1_2.png" id="pic_2">
+					<img src="image/content_1_3.png" id="pic_3">
+					<img src="image/content_1_4.png" id="pic_4">
+				</div>
+				
+				<a class="corp_a">公司介紹</a>
+				<img src="image/line.png" class="linepic">
+				<div class="block_2">
+					<div class="b_2_text">	
+						<p class="b_2_word">				「funBAR」在香港及其他地區提供多款不同類型的網絡及手機遊戲，在港澳台地區風範獨具一格；而在企業形象、產品行銷、客戶服務以及遊戲管理方面，亦受到玩家們的肯定。
+						</br></br>						同時，funBAR更與不同廠商合作並結合成為策略夥伴，帶領遊戲推廣至不同地區。此外，funBAR為迎合玩家不同的需求和配合市場之發展，將會推出更多不同種類的網絡及手機遊戲，為玩家們帶來更多更新的遊戲元素和體驗。
+						</br></br>						展望未來，我們期許自己持續維持市場之領先優勢，並繼續致力於遊戲產品的經營與發展，以及保持「funBAR即歡樂坊」之目標！
+						
+						</p>
+						<img id="b_2_pic_cell" src="image/content_2.png">
+								
+					</div>
+					<div class="b_2_pic">
+						<img src="image/content_2.png">
+					</div>
+				</div>
+				
+				
+				<div class="block_3">
+					<div style="background-image:url('image/pork2.png');">
+						<a class="contact_a">聯絡我們</a>
+						<img src="image/line.png" class="linepic">
+						<a class="contact_a2">
+							客戶服務時間：每週一至週五 09：00 ～ 18：00
+							</br>
+							(週六,  日及公眾假期休息)
+							</br>
+							客戶服務電郵：service@funbar.com.hk
+							</br>
+							業務代表人: Mr. CHOU
+						</a>
+					</div>
+					
+					<div class="b_3_R">
+						<img src="image/QRcode.png">
+					</div>				
+				</div>
+				
+			</div>
+			
+		</main>
+		
+		<footer><span>© 2018 funBAR. All rights reserved</span></footer>
+		
+
+		
+		
+		
+		
+		<script>	
+			$(function () {$('#b1').click(function () {
+				$('.content').animate({
+					scrollTop: 500
+				}, 200
+			);
+			return false;});});
+
+			$(function () {$('#b2').click(function () {
+				$('.content').animate({
+					scrollTop: 0
+				}, 400
+			);
+			return false;});});
+
+			$(function () {$('#b3').click(function () {
+				$('.content').animate({
+					scrollTop: 900
+				}, 400
+			);
+			return false;});});
+
+			$(".navbar ul li").click(function(){
+				$(".navbar ul li").removeClass("active");
+				$(this).addClass("active");
+			});
+
+			
+
+		</script>		
+		
+	</body>
+</html>
